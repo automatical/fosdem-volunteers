@@ -17,3 +17,6 @@ easy-thumbnails==1.4
 python-dateutil==1.5
 django-userena==1.2.4
 django-guardian==1.1.1
+
+#django authentication
+django-auth-ldap

@@ -44,13 +44,13 @@
                                 <li><a href="{% url 'category_schedule_list' %}"><span>{% trans 'Schedules' %}</span></a></li>
                                 <li><a href="{% url 'admin:index' %}"><span>{% trans 'Admin Area' %}</span></a></li>
                             {% endif %}
-                            <li><a href="{% url 'faq' %}"><span>{% trans 'FAQ' %}</span></a></li>
+                            <!-- <li><a href="{% url 'faq' %}"><span>{% trans 'FAQ' %}</span></a></li> -->
                             <li><a href="{% url 'userena_profile_detail' user.username %}"><span>{% trans 'Account' %} ({{ user.username }})</span></a></li>
                             <li><a href="{% url 'userena_signout' %}"><span>{% trans 'Signout' %}</span></a></li>
                         {% else %}
                             <li><a href="{% url 'faq' %}"><span>{% trans 'FAQ' %}</span></a></li>
                             <li><a href="{% url 'userena_signin' %}"><span>{% trans 'Signin' %}</span></a></li>
-                            <li><a href="{% url 'userena_signup' %}"><span>{% trans 'Signup' %}</span></a></li>
+                            <!-- <li><a href="{% url 'userena_signup' %}"><span>{% trans 'Signup' %}</span></a></li> -->
                         {% endif %}
                     </ul>
                 </nav>
@@ -69,7 +69,7 @@
                             <li><a href="{% url 'category_schedule_list' %}"><span>{% trans 'Schedules' %}</span></a></li>
                             <li><a href="{% url 'admin:index' %}"><span>{% trans 'Admin Area' %}</span></a></li>
                         {% endif %}
-                        <li><a href="{% url 'faq' %}"><span>{% trans 'FAQ' %}</span></a></li>
+                        <!-- <li><a href="{% url 'faq' %}"><span>{% trans 'FAQ' %}</span></a></li> -->
                         <li><a href="{% url 'userena_profile_detail' user.username %}"><span>{% trans 'Account' %} ({{ user.username }})</span></a></li>
                         <li><a href="{% url 'userena_signout' %}"><span>{% trans 'Signout' %}</span></a></li>
                     {% else %}

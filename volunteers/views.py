@@ -36,19 +36,19 @@ from .forms import EditProfileForm, SignupForm
 def check_profile_completeness(request, volunteer):
     if request.user != volunteer.user:
         return True
-    if not volunteer.check_mugshot():
-        messages.warning(
-            request,
-            _("Looks like we don't have your beautiful smile in our system. "
-              "Be so kind to upload a mugshot in your profile page. :)"),
-            fail_silently=True)
-    if not volunteer.mobile_nbr:
-        messages.warning(
-            request,
-            _("Hey there! It seems you didn't give us a phone number. "
-              "Please update your profile, or be the last to know the pizza's "
-              "here..."),
-            fail_silently=True)
+    # if not volunteer.check_mugshot():
+    #     messages.warning(
+    #         request,
+    #         _("Looks like we don't have your beautiful smile in our system. "
+    #           "Be so kind to upload a mugshot in your profile page. :)"),
+    #         fail_silently=True)
+    # if not volunteer.mobile_nbr:
+    #     messages.warning(
+    #         request,
+    #         _("Hey there! It seems you didn't give us a phone number. "
+    #           "Please update your profile, or be the last to know the pizza's "
+    #           "here..."),
+    #         fail_silently=True)
 
 
 def faq(request):
